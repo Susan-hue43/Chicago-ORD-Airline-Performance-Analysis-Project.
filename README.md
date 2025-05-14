@@ -84,8 +84,8 @@ To bring these insights to life, we developed a series of **case scenarios**, ea
 
 ---
 
-### 1. Most Profitable Routes, Aircraft, Airports, and Flight
-#### 1.1 Routes
+## 1. Most Profitable Routes, Aircraft, Airports, and Flight
+#### 1.1 Most Profitable Routes
 ![image](https://github.com/user-attachments/assets/f9f14809-c121-4413-9a82-f767de1f8784)
 
 **Observation and Impact**
@@ -180,50 +180,167 @@ Flights such as **Flight7316 (\$993K)** and several others **Flight1580, 3769, 2
 
 ---
 
-### Least Profitable Routes, Aircraft, Airports, and Flights 
-**2. Where Are We Losing the Most Money?**
-Despite some profitable routes, certain routes and operational factors result in significant 
-losses.  
-  * The least profitable route is **Chicago O'Hare International Airport to Salt Lake City 
-International (ORD-SLC)**, which generated a **profit** of only **$1,841,044.90.**  
-  * Chicago O'Hare International Airport to Baltimore/Washington International Thurgood 
-Marshall **(ORD-BWI) ($4,442,184.91)** and Chicago O'Hare International Airport to 
-Washington Dulles International **(ORD-IAD) ($4,676,982.26)** are also among the 
-least profitable routes. 
-  * The **A319** and **B737** aircraft incur significantly higher fuel costs per flight relative to 
-their total fares, which contributes to lower profitability compared to the **A320.** 
-  * Salt Lake City International **(SLC)** is the least profitable airport generating **$1.8M** 
-significantly trailing behind other airports. 
-  * The top flight for this group, **Flight 1088**, generates just **$17,820.60** in **profit** per 
-flight, highlighting the inefficiency of these specific routes.
+## 2. Least Profitable Routes, Aircraft, Airports, and Flights 
 
-**Conclusion:** While the airline still generates profit from these routes, high fuel costs 
-relative to revenue are significantly impacting profitability, especially for shorter and 
-medium-haul routes. Optimizing fuel usage and reassessing pricing strategies could 
-help reduce losses and improve profitability on these routes. 
+**Where Are We Losing the Most Money?**
+Despite some profitable routes, certain routes and operational factors result in significant losses.  
+
+#### 2.1. **Least Profitable Routes.**
+
+![image](https://github.com/user-attachments/assets/cadfb622-2de8-4b18-80f1-2e0a84e2e357)
+
+
+* The **least profitable route**, **ORD–SLC (\$1.84M over 36,000 miles)**, generates minimal return despite its relatively short distance, suggesting low demand or uncompetitive pricing.
+
+  **Impact:**
+   This underperformance raises questions about market viability—continued service may need justification through strategic value, not financial return alone.
+
+* Routes like **ORD–BWI (\$4.44M)** and **ORD–IAD (\$4.68M)** also have **modest distances (45K–54K miles)** and low profit, pointing to a pattern of weak returns on short- to mid-haul East Coast routes.
+
+  **Impact:**
+   This trend suggests that short-haul routes may suffer from high competition or insufficient pricing power, warranting pricing strategy reviews or reduced frequency.
+
+* **ORD–DTW** and **ORD–MSP** show **low profits (\$5.8M–\$6.1M)** despite flying **moderate distances (56K–89K miles)**, indicating possible issues with load factors or overcapacity.
+
+  **Impact:**
+   These may be candidates for aircraft right-sizing or schedule adjustments to improve efficiency and yield per flight.
+
+* **ORD–FLL**, at **139K miles**, is a longer route yet still ranks among the bottom 10 with only **\$7.9M** in profit—suggesting distance alone doesn’t drive profitability.
+   **Impact:**
+   Low return on a long-haul route may indicate pricing misalignment with cost structure or underperformance during off-peak seasons. Closer scrutiny of seasonal and demand patterns is advised.
+
+*  Higher-distance routes like **ORD–CLT (399K miles)**, **ORD–IAH (357K)**, and **ORD–MCO (300K)** deliver **moderate profits (\$12M–\$15.7M)** but still fall behind the top earners.
+
+   **Impact:**
+   While better than others in this tier, these routes may have room for improvement in upselling premium services, managing operational costs, or optimizing fare classes.
+
+* Overall, these **10 least profitable routes** cover **1.66 million miles** and generate a combined **\$89.7 million**, averaging **\$54 per mile**—below the benchmark set by more profitable routes.
+
+  **Impact:**
+   This underperformance suggests that both **distance and demand quality** matter. Optimizing underperforming routes through cost control, better pricing, or strategic scheduling could lift network-wide profit-per-mile.
+
+#### 2.2. Least Profitable Aircraft
+
+![image](https://github.com/user-attachments/assets/3b2ad5f4-52b2-43d2-821a-b92cbb397a11)
+
+**Observations and Impact**
+*  The **A320** has the **lowest fuel cost per flight (\$4.15M)** while still generating a strong **total revenue of \$65.6M**, suggesting higher fuel efficiency and better profit margins.
+
+   **Impact:**
+   This aircraft appears to be the most cost-effective in the current fleet and may be prioritized for expansion on profitable or growing routes.
+
+* **Observation:**
+   The **A319** incurs a **fuel cost of \$10.62M** with a **total revenue of \$181.7M**, indicating moderate fuel efficiency.
+
+  **Impact:**
+   While performance is acceptable overall, route-specific analysis may identify low-efficiency pairings. There may be potential for operational gains by shifting to more efficient aircraft where viable.
+
+* **Observation:**
+   The **B737**, though generating the highest **total revenue (\$235.6M)**, also consumes the most fuel (**\$14.99M**), which dilutes per-flight profitability.
+
+  **Impact:**
+   This suggests that despite strong revenue generation, the B737’s higher operating costs could reduce margins. The airline should evaluate whether its deployment justifies the cost or whether more efficient aircraft can be used for select routes.
+
+* **Observation:**
+   Comparing the three, **fuel cost per dollar earned** is highest for the B737, followed by the A319, then the A320—indicating that **the A320 is the most fuel-efficient relative to revenue**, while **the B737 is the least efficient**.
+
+  **Impact:**
+   Strategic fleet planning should consider reallocating B737 usage to high-demand, long-haul routes where its capacity offsets cost, and prioritizing A320s for routes where margin is more sensitive to fuel expense.
+
+#### 2.3. **Least Profitable Destination Airports**
+
+![image](https://github.com/user-attachments/assets/2b784625-30de-4445-8c21-9edfe7c9331e)
+
+**Observations and Impact**
+*   **Salt Lake City International (SLC)** is the **least profitable airport**, generating only **\$1.84M**, which aligns with its corresponding route's low efficiency.
+
+    **Impact:**
+   SLC’s poor performance suggests limited demand or high operational costs—warranting reassessment of service levels or pricing models on this route.
+
+* **Baltimore/Washington (BWI)** and **Washington Dulles (IAD)** follow closely behind with **profits under \$5M** each, despite being major hubs.
+
+  **Impact:**
+   These results may indicate route saturation, fare pressure, or underutilized flights. Targeted marketing or capacity adjustments may improve yields.
+
+*  **Detroit (DTW)** and **Minneapolis-St. Paul (MSP)** report **profits just above \$5M and \$6M**, respectively—low figures given their relatively short distances from ORD.
+
+   **Impact:**
+   These short-haul routes may be suffering from high frequency with low fare returns. A shift in aircraft or frequency reduction could boost profitability.
+
+*  **Fort Lauderdale (FLL)** ranks mid-tier in this group at **\$7.9M**, indicating better seasonal or tourist-driven profitability but still lower than top-tier routes.
+
+   **Impact:**
+   With targeted promotions and better flight timing, FLL could move into a higher profit tier—especially during peak travel periods.
+
+*  **Charlotte (CLT), Philadelphia (PHL), Houston (IAH), and Orlando (MCO)** all generate profits **above \$11M**, suggesting stronger load factors or optimized pricing despite longer distances.
+
+   **Impact:**
+   These airports are performing relatively well compared to others in this group and may warrant further investment in frequency or premium services.
+
+#### 2.4. **Least Profitable Flights.**
+
+![image](https://github.com/user-attachments/assets/d2098dee-3810-4720-b698-ebb5d7e4b2e4)
+
+
+**Observations and Impact**
+* All listed flights such as **Flight 1088, 5525, and 6769** generate profits of only **\$17.8K–\$17.9K per flight**, which is considerably lower than high-performing flights exceeding \$1M.
+
+  **Impact:**
+   These flights represent a poor return on operational effort. Their low profit per flight could strain network profitability if not offset by high-performing routes.
+
+* A pattern emerges in the **average ticket price**, ranging from **\$115 to \$125**, suggesting uniformly low fares across all these flights.
+
+   **Impact:**
+   Such pricing may not sufficiently cover operational costs, especially for flights with lower load factors or inefficient aircraft use. Fare adjustments or demand stimulation may be necessary.
+
+* The consistency of profits and fares implies these may be **short-haul or regional flights** where pricing is constrained, or competition drives down fares.
+
+  **Impact:**
+   These routes may benefit from dynamic pricing strategies, ancillary revenue increases, or potential bundling offers to improve financial performance.
+
+* The similarity in financial performance across flights suggests a **structural issue** possibly aircraft assignment, scheduling inefficiencies, or underperforming markets.
+
+  **Impact:**
+   Reassessing aircraft utilization, route timing, or even consolidating underperforming frequencies may enhance route-level profitability.
 
 ---
 
-### Flight Volume Analysis.
-**3. How many flights are flown from O'Hare (ORD) to Los Angeles International Airport (LAX)?**
-  * The Chicago O'Hare International to Los Angeles International **(ORD-LAX)** route operates **699** flights, highlighting significant demand.
+## 3. Seasonal Flight Volume Trends.
 
-**4. What was the most popular month to fly to Fort Lauderdale (FLL)?**
-  * **August** recorded **1,025 flights**, making it the busiest month for this route.
+![image](https://github.com/user-attachments/assets/53268964-c3e6-4188-bfc4-eefc5217852d)
+
+
+### **Scenario 3: Seasonal Flight Volume Trends – Uncovering Demand Patterns Across Routes**
+
+#### **3.1. Peak Flight Volume Months:**
+
+* **July & August (2014):** 146 and 159 flights
+* **July & August (2015):** 138 and 131 flights
+
+**Impact:** These months show the highest flight volumes in both years, underlining peak summer travel demand. These are critical for capacity planning, as they directly correlate to revenue opportunities due to high demand.
+
+
+#### **3.2. Lowest Flight Volume Months:**
+
+* **April & May (2014):** 80 flights each
+* **September (2015):** 81 flights
+
+**Impact:** These months represent off-peak periods, where lower flight volumes can result in reduced profitability. Airlines should consider using this data for targeted promotions, fare discounts, or aircraft maintenance scheduling to maintain profitability without reducing flight frequencies.
+
+
+#### **3.3. Total Yearly Flight Volumes:**
+
+* **2014:** 1,378 flights
+* **2015:** 1,340 flights
+
+**Impact:** The stable yearly volume metric reflects consistent demand patterns, but the slight decline in 2015 (compared to 2014) could be a signal to further assess factors influencing demand and consider adjustments in pricing or capacity to maintain growth.
+
+
+#### **3.4. Monthly Flight Count Average (Over Two Years):**
+
+* **Average Monthly Flights:** 113 (Based on 2,718 total flights across both years)
+
+**Impact:** The average monthly flight volume provides a baseline for expected activity, helping in forecasting, budget allocation, and operational optimization. Deviation from this average in specific months (e.g., July, August, and the slower months) can help refine performance expectations.
 
 ---
 
-### Revenue Contribution by Route.
-**5. Which route accounts for the lowest percentage of total revenue?**
-  * The route with the **lowest** percentage of total revenue is **Chicago O'Hare International Airport to Salt Lake City International (ORD-SLC)**, accounting for just **0.41%** of the total fare. 
-  * Other low-revenue routes include ORD-Baltimore/Washington International Thurgood Marshall **(ORD-BWI) (0.96%)** and ORD-Washington Dulles International **(ORD-IAD) (1.00%)**. These routes contribute **minimally** to the **airline's overall revenue** compared to **high-revenue routes** like ORD-Los Angeles International **(ORD-LAX)**, which generates **9.63%** of the total fare.
-
----
-
-### Seasonal Trends – Chicago O'Hare International-Philadelphia International Route
-Visual Representation of Monthly Flight Trends for ORD-PHL
-
-
-  * **Peak Months:** August (**1,025 flights**) and July (**1,013 flights**), indicating high summer travel demand.
-  * **Lowest Flights:** February (**608 flights**), suggesting seasonality effects.
-  * **Annual Average:** The trend follows typical airline seasonality, with **demand peaking** during **summer** and **declining in winter months.**
