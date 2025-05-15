@@ -1,5 +1,8 @@
 # Chicago-ORD-Airline-Performance-Analysis-Report.
 
+![20250515_1712_Airline Performance Designs_simple_compose_01jva4hv2qf15vfm7vzg85cq5g](https://github.com/user-attachments/assets/90f1fae4-46c6-455a-a55e-7fa00dca9713)
+*photo by sora*
+
 ## 📑 Table of Contents
 
 * [Introduction](#introduction)
