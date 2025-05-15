@@ -1,4 +1,21 @@
 # Chicago-ORD-Airline-Performance-Analysis-Report.
+
+## 📑 Table of Contents
+
+* [Introduction](#introduction)
+* [Problem Statement](#problem-statement)
+* [Methodology](#methodology)
+* [Profitability Analysis and Business Case Scenarios](#profitability-analysis-and-business-case-scenarios)
+
+  * [Scenario 1: Most Profitable Routes, Aircraft, Airports, and Flight](#scenario-1-most-profitable-routes-aircraft-airports-and-flight)
+  * [Scenario 2: Least Profitable Routes, Aircraft, Airports, and Flights](#scenario-2-least-profitable-routes-aircraft-airports-and-flights)
+  * [Scenario 3: Seasonal Flight Volume Trends – Uncovering Demand Patterns Across Most Profitable Routes](#scenario-3-seasonal-flight-volume-trends--uncovering-demand-patterns-across-most-profitable-routes)
+  * [Scenario 4: Seasonal Flight Volume Trends – Uncovering Demand Patterns Across Least Profitable Routes](#scenario-4-seasonal-flight-volume-trends--uncovering-demand-patterns-across-least-profitable-routes)
+* [Conclusion](#conclusion)
+* [Recommendations](#recommendations)
+
+---
+
 ## Introduction
 
 This project presents an in-depth analysis of a small startup airline's financial performance across its routes, aircraft, and airport operations. The analysis was commissioned by the CEO to help uncover strategic insights that can guide business growth and improve efficiency. The airline operates out of the Chicago, Illinois area, with a strong foundation in operations but limited experience in financial and data analytics.
