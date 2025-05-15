@@ -17,11 +17,23 @@ For example, details such as aircraft type, route assignments, and seating capac
 
 ## Methodology
 
-This analysis was conducted using **Microsoft Excel**, primarily leveraging **Power Query** for data transformation and Pivot Tables for summarization and trend analysis. The startup airline initially faced a major challenge: data related to aircraft, routes, and financials existed in **separate, unlinked reports**, making it time-consuming to derive insights or generate a single unified report.
+This analysis was conducted in **Microsoft Excel**, with **Power Query** used for integrating and transforming fragmented data, and **Pivot Tables** for summarization and trend analysis.
 
-To solve this, datasets were **merged using Power Query** based on common identifiers such as `AircraftID`, `AirportID`, and `RouteID`. This allowed for a **consolidated data model**, enabling dynamic exploration and unified insights.
+The startup airline faced a major challenge: key data on **aircraft, routes, flights, and financials** was spread across **unlinked sheets** in the Excel workbook **`GTP Case week 3.xlsx`**, making it difficult to extract insights.
 
-Pivot Tables were then used to perform aggregations and uncover trends related to revenue, profitability, delays, and capacity utilization.
+To address this, Power Query was used to **consolidate and relate the separate datasets**. As shown in the **Power Query Editor screenshot** below, the **Queries pane** lists multiple initial queries (e.g., `AircraftPivot`, `AirportPivot`, `FlightsPivot`, `RoutesPivot`), each representing a distinct sheet from the workbook. The **formula bar confirms** the merging via the **Primary key & Foreign Key** of primary and secondary table respectively.
+
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/96de96db-90a7-43dc-bbf6-2600ade67c32" />
+
+The consolidation process involved **sequential merging of queries using Power Query's "Merge Queries" feature**:
+
+* Queries like `Flights_Routes` resulted from joining “Flights” and “Routes” using a shared key such as `RouteID`.
+* `Flights_Routes_Aircraft` suggests a further merge with “Aircraft” data via `AircraftID`.
+
+These joins created **composite queries**, enabling row-by-row linkage of related data. The resulting **unified data model** allowed for:
+
+* Consistent and dynamic analysis via Pivot Tables.
+* Clear insights into **revenue, profitability, flight volume, delays, and capacity.**
 
 Below are the tables used in the analysis, each with its respective columns and descriptions:
 
@@ -84,7 +96,7 @@ To bring these insights to life, we developed a series of **case scenarios**, ea
 
 ---
 
-## 1. Most Profitable Routes, Aircraft, Airports, and Flight
+## Scenario 1: Most Profitable Routes, Aircraft, Airports, and Flight.
 #### 1.1 Most Profitable Routes
 ![image](https://github.com/user-attachments/assets/f9f14809-c121-4413-9a82-f767de1f8784)
 
@@ -180,7 +192,7 @@ Flights such as **Flight7316 (\$993K)** and several others **Flight1580, 3769, 2
 
 ---
 
-## 2. Least Profitable Routes, Aircraft, Airports, and Flights 
+## Scenario 2: Least Profitable Routes, Aircraft, Airports, and Flights 
 
 **Where Are We Losing the Most Money?**
 Despite some profitable routes, certain routes and operational factors result in significant losses.  
@@ -189,7 +201,7 @@ Despite some profitable routes, certain routes and operational factors result in
 
 ![image](https://github.com/user-attachments/assets/cadfb622-2de8-4b18-80f1-2e0a84e2e357)
 
-
+**Observations and Impact**
 * The **least profitable route**, **ORD–SLC (\$1.84M over 36,000 miles)**, generates minimal return despite its relatively short distance, suggesting low demand or uncompetitive pricing.
 
   **Impact:**
@@ -314,8 +326,8 @@ Despite some profitable routes, certain routes and operational factors result in
 
 #### **3.1. Peak Flight Volume Months:**
 
-* **July & August (2014):** 146 and 159 flights
-* **July & August (2015):** 138 and 131 flights
+* **August & November (2014):** 159 and 167 flights
+* **June & July (2015):** 137 and 138 flights
 
 **Impact:** These months show the highest flight volumes in both years, underlining peak summer travel demand. These are critical for capacity planning, as they directly correlate to revenue opportunities due to high demand.
 
@@ -344,3 +356,49 @@ Despite some profitable routes, certain routes and operational factors result in
 
 ---
 
+## **Conclusion and Recommendations**
+
+## **Conclusion**
+
+The airline's route and operational profitability analysis reveals a concentrated dependency on a few high-performing routes, aircraft, and destinations. Routes from Chicago O’Hare (ORD) to Los Angeles (LAX), San Francisco (SFO), and Denver (DEN) consistently emerge as top revenue generators, delivering the highest total profits per flight. Aircraft-wise, the Boeing 737 leads in overall profitability, while the Airbus A320 offers the most fuel-efficient returns relative to revenue.
+
+Conversely, several short- and mid-haul routes such as ORD–SLC, ORD–BWI, and ORD–IAD are underperforming significantly, both in profit and flight efficiency. These routes, along with the corresponding airports, contribute minimally to network profitability. Operational costs, particularly fuel usage for the B737, reveal that high revenue does not always equate to optimal margin, underlining the importance of fuel efficiency and route alignment.
+
+This profitability disparity highlights the need for strategic resource allocation, efficiency improvements, and tailored pricing strategies to ensure sustainable growth and margin improvement across the network.
+
+---
+
+## **Recommendations**
+
+#### 1. **Prioritize and Expand High-Performing Routes**
+
+* **Maintain and potentially increase frequency** on high-profit routes such as ORD–LAX, ORD–SFO, and ORD–DEN to maximize revenue.
+* **Enhance pricing strategies and customer experience** on these routes to retain competitive advantage and yield premium returns.
+
+#### 2. **Reallocate Capacity from Low-Performing Routes**
+
+* **Review route viability** for consistently underperforming corridors like ORD–SLC, ORD–BWI, and ORD–IAD. Consider reducing frequency, rerouting, or exiting where strategic justification is weak.
+* **Implement route-level cost controls** and assess demand elasticity to test revised schedules or smaller aircraft on marginal routes.
+
+#### 3. **Optimize Aircraft Deployment**
+
+* **Assign B737s to long-haul, high-demand routes** where their higher capacity justifies fuel and operating costs.
+* **Utilize A320s more strategically** on medium-haul, cost-sensitive routes to benefit from their superior fuel efficiency relative to revenue.
+* **Continue leveraging the A319** on routes with moderate traffic and strong profit-per-seat margins.
+
+#### 4. **Enhance Mid-Tier Route Profitability**
+
+* For routes with high volume but moderate profit (e.g., ORD–ATL, ORD–DFW, ORD–JFK), **evaluate pricing strategies**, fare segmentation, and operational schedules to improve yield.
+* **Explore seasonal scheduling and marketing** to optimize demand during off-peak periods.
+
+#### 5. **Target Airport-Specific Strategies**
+
+* **Reassess service to underperforming airports** like SLC, BWI, and IAD, considering demand factors, competition, and cost structures.
+* **Focus marketing efforts** and partnerships on improving profitability at mid-tier airports (e.g., FLL, CLT) with potential for seasonal gains.
+
+#### 6. **Monitor and Improve Individual Flight Performance**
+
+* **Track top-grossing individual flights** for operational efficiency and customer satisfaction to preserve and grow profitability.
+* **Apply dynamic fare management and ancillary upsells** to elevate mid-tier flights closer to top performer status.
+
+---
